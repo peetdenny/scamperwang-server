@@ -40,6 +40,11 @@ async def upload(request):
          "confidence": confidence
     })
     
+@app.route("/classes", methods=["GET"])
+async def get_classes(request):
+    return JSONResponse(
+        {"spiders": ["Big spider", "Little spider", "Eurl"]}
+    )
 
 
 if __name__ == "__main__":
