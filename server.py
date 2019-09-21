@@ -1,3 +1,4 @@
+import os
 import sys
 import uvicorn
 from starlette.applications import Starlette
@@ -49,5 +50,6 @@ async def get_classes(request):
 
 if __name__ == "__main__":
     if "serve" in sys.argv:
+        port = int(os.getenv("PORT", "8008"))
         predicter.init()
-        uvicorn.run(app, host="0.0.0.0", port=8008)
+        uvicorn.run(app, host="0.0.0.0", port=port)
