@@ -1,4 +1,4 @@
-urlBase='http://localhost:8008/'
+urlBase='/'
 classesURL = urlBase+'classes'
 postURL = urlBase+"upload"
 
