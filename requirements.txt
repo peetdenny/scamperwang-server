@@ -10,7 +10,7 @@ httptools==0.0.13
 idna==2.8
 imageio==2.5.0
 multidict==4.5.2
-numpy==1.16.2
+numpy==1.22.0
 numpydoc==0.8.0
 pathlib2==2.3.3
 pickleshare==0.7.5
